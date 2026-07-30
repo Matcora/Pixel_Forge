@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://df3ch5dox8uei"]
+
+[ext_resource type="Script" uid="uid://isq5ettqy7y3" path="res://Scripts/Player.gd" id="1_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://do8ovrgr3xdxi" path="res://assets/Adobe Express - file (1).png" id="2_gntrk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
+size = Vector2(39, 84)
+
+[node name="Node2D" type="Node2D" unique_id=1380512965]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
+script = ExtResource("1_kyqiw")
+
+[node name="AdobeExpressFile(1)" type="Sprite2D" parent="CharacterBody2D" unique_id=11897355]
+position = Vector2(14, 26)
+scale = Vector2(0.17977528, 0.26039603)
+texture = ExtResource("2_gntrk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
+position = Vector2(9.5, 32)
+scale = Vector2(1.0516129, 1.0121951)
+shape = SubResource("RectangleShape2D_uxa2c")
