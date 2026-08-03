@@ -1,22 +1,85 @@
 [gd_scene format=3 uid="uid://df3ch5dox8uei"]
 
 [ext_resource type="Script" uid="uid://isq5ettqy7y3" path="res://Scripts/Player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://do8ovrgr3xdxi" path="res://assets/Adobe Express - file (1).png" id="2_gntrk"]
+[ext_resource type="Texture2D" uid="uid://baui47nf7y24f" path="res://assets/Scorpion/Stance/Sprite-0001.png" id="2_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://devds1vxv6u01" path="res://assets/Scorpion/Stance/Sprite-0002.png" id="3_bhhdu"]
+[ext_resource type="Texture2D" uid="uid://cmp4wuohwhhke" path="res://assets/Scorpion/Stance/Sprite-0003.png" id="4_megsn"]
+[ext_resource type="Texture2D" uid="uid://gct8ra3hynd" path="res://assets/Scorpion/Stance/Sprite-0004.png" id="5_yoq75"]
+[ext_resource type="Texture2D" uid="uid://dsmky6ovkime7" path="res://assets/Scorpion/Stance/Sprite-0005.png" id="6_ksbbd"]
+[ext_resource type="Texture2D" uid="uid://cs2jngrsd5ma6" path="res://assets/Scorpion/Stance/Sprite-0006.png" id="7_glx4g"]
+[ext_resource type="Texture2D" uid="uid://4bmj4g15x8rq" path="res://assets/Scorpion/Stance/Sprite-0007.png" id="8_miouo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3h8g"]
+atlas = ExtResource("2_kyqiw")
+region = Rect2(0, 0, 230, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1e7my"]
+atlas = ExtResource("3_bhhdu")
+region = Rect2(0, 0, 230, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arntx"]
+atlas = ExtResource("4_megsn")
+region = Rect2(0, 0, 230, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lslt6"]
+atlas = ExtResource("5_yoq75")
+region = Rect2(0, 0, 230, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulo2v"]
+atlas = ExtResource("6_ksbbd")
+region = Rect2(0, 0, 230, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1iu4k"]
+atlas = ExtResource("7_glx4g")
+region = Rect2(0, 0, 230, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0x7a"]
+atlas = ExtResource("8_miouo")
+region = Rect2(0, 0, 230, 220)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jjauv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3h8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1e7my")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arntx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lslt6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulo2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1iu4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0x7a")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
-size = Vector2(39, 84)
+size = Vector2(42.08129, 127.6988)
 
 [node name="Node2D" type="Node2D" unique_id=1380512965]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
 script = ExtResource("1_kyqiw")
 
-[node name="AdobeExpressFile(1)" type="Sprite2D" parent="CharacterBody2D" unique_id=11897355]
-position = Vector2(14, 26)
-scale = Vector2(0.17977528, 0.26039603)
-texture = ExtResource("2_gntrk")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
+position = Vector2(20, 0)
+sprite_frames = SubResource("SpriteFrames_jjauv")
+frame_progress = 0.53535914
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
-position = Vector2(9.5, 32)
+position = Vector2(3.1266131, 3.6280491)
 scale = Vector2(1.0516129, 1.0121951)
 shape = SubResource("RectangleShape2D_uxa2c")
