@@ -322,7 +322,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch1",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -357,7 +357,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch2",
-"speed": 10.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -377,7 +377,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch3",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -412,7 +412,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch4",
-"speed": 10.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -792,7 +792,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch1",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -827,7 +827,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch2",
-"speed": 10.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -847,7 +847,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch3",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -882,7 +882,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"punch4",
-"speed": 10.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -976,13 +976,13 @@ action_crouch = "p2_crouch"
 [node name="Sombra" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=504524579]
 position = Vector2(20, 0)
 sprite_frames = SubResource("SpriteFrames_jjauv")
-animation = &"bodytobody1"
+animation = &"punch4"
 flip_h = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
 position = Vector2(20, 0)
 sprite_frames = SubResource("SpriteFrames_lwh80")
-animation = &"bodytobody1"
+animation = &"punch4"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
