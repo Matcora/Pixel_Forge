@@ -1,2 +1,2 @@
 res://Scenes/Player.tscn
-res://Scenes/animatable_body_2d.gd
+res://Scripts/Player.gd

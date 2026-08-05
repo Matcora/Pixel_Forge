@@ -62,7 +62,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_m0x7a")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"stance",
 "speed": 7.0
 }]
 
@@ -73,11 +73,13 @@ size = Vector2(42.08129, 127.6988)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
 script = ExtResource("1_kyqiw")
+min_x = 10
+max_x = 1102
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
 position = Vector2(20, 0)
 sprite_frames = SubResource("SpriteFrames_jjauv")
-frame_progress = 0.53535914
+animation = &"stance"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
 position = Vector2(3.1266131, 3.6280491)

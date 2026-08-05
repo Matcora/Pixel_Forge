@@ -1,23 +1,24 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1785766465
-icon.svg::CompressedTexture2D::6979321926589455400::1785759794::1785760675::1::::<><><>0<>0<>7ac09384ebd91ee4175cc2b506723119<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1785765475
-Captura de pantalla 2026-07-30 084959.png::CompressedTexture2D::8655853855547857458::1785759794::1785760675::1::::<><><>0<>0<>f2b874b88c363731da5042739d52fc9c<>res://.godot/imported/Captura de pantalla 2026-07-30 084959.png-d2006e321c191e2d1dc57308833e8a6e.ctex::
-::res://assets/Scorpion/::1785766418
-Arcade - Mortal Kombat - Kombatants - Scorpion1.png::CompressedTexture2D::6259740760466323938::1785766168::1785766468::1::::<><><>0<>0<>c83403942d19e7d60b6cb96000dfc92a<>res://.godot/imported/Arcade - Mortal Kombat - Kombatants - Scorpion1.png-c967f795b15fa3c4473b318e87996f97.ctex::
-Arcade - Mortal Kombat - Kombatants - Scorpion2.png::CompressedTexture2D::5265961816163463557::1785766170::1785766472::1::::<><><>0<>0<>e1a6393df7050efd2dcc395841d3868e<>res://.godot/imported/Arcade - Mortal Kombat - Kombatants - Scorpion2.png-d31ad75cd14f36716bb15b36e78d642a.ctex::
-::res://assets/Scorpion/Stance/::1785766406
-Sprite-0001.png::CompressedTexture2D::2428247463840247659::1785766103::1785766465::1::::<><><>0<>0<>c6b01746d8ff5a75f82015a929db7054<>res://.godot/imported/Sprite-0001.png-b40d16369987d6dedeab427fc89194b8.ctex::
-Sprite-0002.png::CompressedTexture2D::7483585052857592228::1785766103::1785766465::1::::<><><>0<>0<>eb84a849983b2878823b5f487dc9a190<>res://.godot/imported/Sprite-0002.png-5c66e2458f07d54c1d673651304e0051.ctex::
-Sprite-0003.png::CompressedTexture2D::5647874310051618156::1785766103::1785766465::1::::<><><>0<>0<>e3745383a6e81585e5955a97791dea6e<>res://.godot/imported/Sprite-0003.png-9d57fd9f120c5d08ee8c9bb7180653af.ctex::
-Sprite-0004.png::CompressedTexture2D::12543390164035157::1785766103::1785766465::1::::<><><>0<>0<>0cb1e36c5ccd463841dbaac229d8cb5b<>res://.godot/imported/Sprite-0004.png-7289e86651e398c2e7bfb776566e8e31.ctex::
-Sprite-0005.png::CompressedTexture2D::8448085449412937560::1785766103::1785766465::1::::<><><>0<>0<>03416cee3579488f39f63d982fd4bde7<>res://.godot/imported/Sprite-0005.png-d4778d58c8436fbd598b0bb42138ab59.ctex::
-Sprite-0006.png::CompressedTexture2D::6092548762710876399::1785766103::1785766465::1::::<><><>0<>0<>97535f5b1080fb6f4b4b805b9f4988e1<>res://.godot/imported/Sprite-0006.png-8b4ddfaea15fd301f7d4d7a29a8d9e92.ctex::
-Sprite-0007.png::CompressedTexture2D::2038287052983675054::1785766103::1785766465::1::::<><><>0<>0<>aec8de5367a5355a52e0f34e186ecbe7<>res://.godot/imported/Sprite-0007.png-e53919e9c14ee7ca2807921a87377874.ctex::
-::res://main/::1785759794
-main.tscn::PackedScene::6796575766414288456::1785759794::0::1::::<><><>0<>0<><>::uid://bv3a02dhgw2km::::res://Scenes/floor.tscn<>uid://df3ch5dox8uei::::res://Scenes/Player.tscn
-::res://Scenes/::1785765440
-floor.tscn::PackedScene::3918235045144906620::1785760777::0::1::::<><><>0<>0<><>::uid://dvk7wbrlhrd5s::::res://assets/Captura de pantalla 2026-07-30 084959.png
-Player.tscn::PackedScene::7568144361929075544::1785765440::0::1::::<><><>0<>0<><>::uid://isq5ettqy7y3::::res://Scripts/Player.gd<>uid://baui47nf7y24f::::res://assets/Scorpion/Sprite-0001.png
-::res://Scripts/::1785759794
-Player.gd::GDScript::599694834709065388::1785759794::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1785874951
+icon.svg::CompressedTexture2D::6979321926589455400::1785874126::1785874952::1::::<><><>0<>0<>7ac09384ebd91ee4175cc2b506723119<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1785874145
+Captura de pantalla 2026-07-30 084959.png::CompressedTexture2D::8655853855547857458::1785874126::1785874952::1::::<><><>0<>0<>f2b874b88c363731da5042739d52fc9c<>res://.godot/imported/Captura de pantalla 2026-07-30 084959.png-d2006e321c191e2d1dc57308833e8a6e.ctex::
+::res://assets/Scorpion/::1785874145
+Arcade - Mortal Kombat - Kombatants - Scorpion1.png::CompressedTexture2D::6259740760466323938::1785874126::1785874955::1::::<><><>0<>0<>c83403942d19e7d60b6cb96000dfc92a<>res://.godot/imported/Arcade - Mortal Kombat - Kombatants - Scorpion1.png-c967f795b15fa3c4473b318e87996f97.ctex::
+Arcade - Mortal Kombat - Kombatants - Scorpion2.png::CompressedTexture2D::5265961816163463557::1785874126::1785874961::1::::<><><>0<>0<>e1a6393df7050efd2dcc395841d3868e<>res://.godot/imported/Arcade - Mortal Kombat - Kombatants - Scorpion2.png-d31ad75cd14f36716bb15b36e78d642a.ctex::
+::res://assets/Scorpion/Stance/::1785874145
+Sprite-0001.png::CompressedTexture2D::2428247463840247659::1785874126::1785874952::1::::<><><>0<>0<>c6b01746d8ff5a75f82015a929db7054<>res://.godot/imported/Sprite-0001.png-b40d16369987d6dedeab427fc89194b8.ctex::
+Sprite-0002.png::CompressedTexture2D::7483585052857592228::1785874126::1785874952::1::::<><><>0<>0<>eb84a849983b2878823b5f487dc9a190<>res://.godot/imported/Sprite-0002.png-5c66e2458f07d54c1d673651304e0051.ctex::
+Sprite-0003.png::CompressedTexture2D::5647874310051618156::1785874126::1785874952::1::::<><><>0<>0<>e3745383a6e81585e5955a97791dea6e<>res://.godot/imported/Sprite-0003.png-9d57fd9f120c5d08ee8c9bb7180653af.ctex::
+Sprite-0004.png::CompressedTexture2D::12543390164035157::1785874126::1785874952::1::::<><><>0<>0<>0cb1e36c5ccd463841dbaac229d8cb5b<>res://.godot/imported/Sprite-0004.png-7289e86651e398c2e7bfb776566e8e31.ctex::
+Sprite-0005.png::CompressedTexture2D::8448085449412937560::1785874126::1785874952::1::::<><><>0<>0<>03416cee3579488f39f63d982fd4bde7<>res://.godot/imported/Sprite-0005.png-d4778d58c8436fbd598b0bb42138ab59.ctex::
+Sprite-0006.png::CompressedTexture2D::6092548762710876399::1785874126::1785874952::1::::<><><>0<>0<>97535f5b1080fb6f4b4b805b9f4988e1<>res://.godot/imported/Sprite-0006.png-8b4ddfaea15fd301f7d4d7a29a8d9e92.ctex::
+Sprite-0007.png::CompressedTexture2D::2038287052983675054::1785874126::1785874952::1::::<><><>0<>0<>aec8de5367a5355a52e0f34e186ecbe7<>res://.godot/imported/Sprite-0007.png-e53919e9c14ee7ca2807921a87377874.ctex::
+::res://main/::1785874145
+main.tscn::PackedScene::6796575766414288456::1785874126::0::1::::<><><>0<>0<><>::uid://bv3a02dhgw2km::::res://Scenes/floor.tscn<>uid://df3ch5dox8uei::::res://Scenes/Player.tscn
+::res://Scenes/::1785874145
+animatable_body_2d.gd::GDScript::6082625585446013908::1785874126::0::1::::<>CharacterBody2D<><>0<>0<><>::
+floor.tscn::PackedScene::3918235045144906620::1785874126::0::1::::<><><>0<>0<><>::uid://dvk7wbrlhrd5s::::res://assets/Captura de pantalla 2026-07-30 084959.png
+Player.tscn::PackedScene::7568144361929075544::1785874126::0::1::::<><><>0<>0<><>::uid://isq5ettqy7y3::::res://Scripts/Player.gd<>uid://baui47nf7y24f::::res://assets/Scorpion/Stance/Sprite-0001.png<>uid://devds1vxv6u01::::res://assets/Scorpion/Stance/Sprite-0002.png<>uid://cmp4wuohwhhke::::res://assets/Scorpion/Stance/Sprite-0003.png<>uid://gct8ra3hynd::::res://assets/Scorpion/Stance/Sprite-0004.png<>uid://dsmky6ovkime7::::res://assets/Scorpion/Stance/Sprite-0005.png<>uid://cs2jngrsd5ma6::::res://assets/Scorpion/Stance/Sprite-0006.png<>uid://4bmj4g15x8rq::::res://assets/Scorpion/Stance/Sprite-0007.png
+::res://Scripts/::1785874145
+Player.gd::GDScript::599694834709065388::1785874126::0::1::::<>CharacterBody2D<><>0<>0<><>::
