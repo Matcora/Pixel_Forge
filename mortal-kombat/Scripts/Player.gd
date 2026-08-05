@@ -19,6 +19,8 @@ extends CharacterBody2D
 var golpeando: bool = false
 var punch_animations = ["punch1", "punch2", "punch3", "punch4"]
 var punch_index = 0
+var bodytobody_animations = ["bodytobody1", "bodytobody2"]
+var bodytobody_index = 0
 
 
 func _physics_process(delta):
@@ -40,8 +42,15 @@ func _physics_process(delta):
 
 	if Input.is_action_just_pressed(action_attack):
 		print("golpe")
-		var nombre_golpe = punch_animations[punch_index]
-		punch_index = (punch_index + 1) % punch_animations.size()
+		var agachado = Input.is_action_pressed(action_crouch)
+		var nombre_golpe
+
+		if agachado:
+			nombre_golpe = bodytobody_animations[bodytobody_index]
+			bodytobody_index = (bodytobody_index + 1) % bodytobody_animations.size()
+		else:
+			nombre_golpe = punch_animations[punch_index]
+			punch_index = (punch_index + 1) % punch_animations.size()
 
 		if anim.sprite_frames.has_animation(nombre_golpe):
 			golpeando = true

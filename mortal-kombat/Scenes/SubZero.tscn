@@ -280,7 +280,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_62oj0")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"bodytobody1",
 "speed": 5.0
 }, {
@@ -300,7 +300,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qxkqx")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"bodytobody2",
 "speed": 5.0
 }, {
@@ -750,7 +750,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qliha")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"bodytobody1",
 "speed": 5.0
 }, {
@@ -770,7 +770,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7c84i")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"bodytobody2",
 "speed": 5.0
 }, {
@@ -976,13 +976,13 @@ action_crouch = "p2_crouch"
 [node name="Sombra" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=504524579]
 position = Vector2(20, 0)
 sprite_frames = SubResource("SpriteFrames_jjauv")
-animation = &"bodytobody2"
+animation = &"bodytobody1"
 flip_h = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
 position = Vector2(20, 0)
 sprite_frames = SubResource("SpriteFrames_lwh80")
-animation = &"punch1"
+animation = &"bodytobody1"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
