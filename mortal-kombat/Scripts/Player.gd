@@ -17,6 +17,8 @@ extends CharacterBody2D
 @onready var sombra: AnimatedSprite2D = get_node_or_null("Sombra")
 
 var golpeando: bool = false
+var punch_animations = ["punch1", "punch2", "punch3", "punch4"]
+var punch_index = 0
 
 
 func _physics_process(delta):
@@ -38,8 +40,12 @@ func _physics_process(delta):
 
 	if Input.is_action_just_pressed(action_attack):
 		print("golpe")
-		golpeando = true
-		jugar_animacion("punch")
+		var nombre_golpe = punch_animations[punch_index]
+		punch_index = (punch_index + 1) % punch_animations.size()
+
+		if anim.sprite_frames.has_animation(nombre_golpe):
+			golpeando = true
+			jugar_animacion(nombre_golpe)
 
 	if golpeando:
 		if not anim.is_playing():
