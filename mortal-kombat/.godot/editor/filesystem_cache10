@@ -1,12 +1,12 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1785874951
+::res://::1785892487
 icon.svg::CompressedTexture2D::6979321926589455400::1785874126::1785874952::1::::<><><>0<>0<>7ac09384ebd91ee4175cc2b506723119<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1785874145
+::res://assets/::1785894014
 Captura de pantalla 2026-07-30 084959.png::CompressedTexture2D::8655853855547857458::1785874126::1785874952::1::::<><><>0<>0<>f2b874b88c363731da5042739d52fc9c<>res://.godot/imported/Captura de pantalla 2026-07-30 084959.png-d2006e321c191e2d1dc57308833e8a6e.ctex::
-::res://assets/Scorpion/::1785874145
+::res://assets/Scorpion/::1785874961
 Arcade - Mortal Kombat - Kombatants - Scorpion1.png::CompressedTexture2D::6259740760466323938::1785874126::1785874955::1::::<><><>0<>0<>c83403942d19e7d60b6cb96000dfc92a<>res://.godot/imported/Arcade - Mortal Kombat - Kombatants - Scorpion1.png-c967f795b15fa3c4473b318e87996f97.ctex::
 Arcade - Mortal Kombat - Kombatants - Scorpion2.png::CompressedTexture2D::5265961816163463557::1785874126::1785874961::1::::<><><>0<>0<>e1a6393df7050efd2dcc395841d3868e<>res://.godot/imported/Arcade - Mortal Kombat - Kombatants - Scorpion2.png-d31ad75cd14f36716bb15b36e78d642a.ctex::
-::res://assets/Scorpion/Stance/::1785874145
+::res://assets/Scorpion/Stance/::1785874952
 Sprite-0001.png::CompressedTexture2D::2428247463840247659::1785874126::1785874952::1::::<><><>0<>0<>c6b01746d8ff5a75f82015a929db7054<>res://.godot/imported/Sprite-0001.png-b40d16369987d6dedeab427fc89194b8.ctex::
 Sprite-0002.png::CompressedTexture2D::7483585052857592228::1785874126::1785874952::1::::<><><>0<>0<>eb84a849983b2878823b5f487dc9a190<>res://.godot/imported/Sprite-0002.png-5c66e2458f07d54c1d673651304e0051.ctex::
 Sprite-0003.png::CompressedTexture2D::5647874310051618156::1785874126::1785874952::1::::<><><>0<>0<>e3745383a6e81585e5955a97791dea6e<>res://.godot/imported/Sprite-0003.png-9d57fd9f120c5d08ee8c9bb7180653af.ctex::
@@ -14,11 +14,28 @@ Sprite-0004.png::CompressedTexture2D::12543390164035157::1785874126::1785874952:
 Sprite-0005.png::CompressedTexture2D::8448085449412937560::1785874126::1785874952::1::::<><><>0<>0<>03416cee3579488f39f63d982fd4bde7<>res://.godot/imported/Sprite-0005.png-d4778d58c8436fbd598b0bb42138ab59.ctex::
 Sprite-0006.png::CompressedTexture2D::6092548762710876399::1785874126::1785874952::1::::<><><>0<>0<>97535f5b1080fb6f4b4b805b9f4988e1<>res://.godot/imported/Sprite-0006.png-8b4ddfaea15fd301f7d4d7a29a8d9e92.ctex::
 Sprite-0007.png::CompressedTexture2D::2038287052983675054::1785874126::1785874952::1::::<><><>0<>0<>aec8de5367a5355a52e0f34e186ecbe7<>res://.godot/imported/Sprite-0007.png-e53919e9c14ee7ca2807921a87377874.ctex::
+::res://assets/SubZero/::1785894247
+Sprite-0001-stance.png::CompressedTexture2D::8907259816673713233::1785894247::1785894248::1::::<><><>0<>0<>fefd87e6b581a47f516f55f75818d18d<>res://.godot/imported/Sprite-0001-stance.png-2a541876ae4a0c910b87ce1761c03d89.ctex::
+Sprite-0002-shadowstance.png::CompressedTexture2D::8853957203261484953::1785894247::1785894248::1::::<><><>0<>0<>022d652547d344a5c3638f9bf10d1f6d<>res://.godot/imported/Sprite-0002-shadowstance.png-dcaa8bcc0d068e1337051018ffd02279.ctex::
+Sprite-0003-walk.png::CompressedTexture2D::2674790712784715787::1785894247::1785894248::1::::<><><>0<>0<>072ff242a753544cd19d69679244a553<>res://.godot/imported/Sprite-0003-walk.png-e18bd495795ae8dc34942b079fd700a5.ctex::
+Sprite-0004-shadowwalk.png::CompressedTexture2D::616947392707947595::1785894247::1785894248::1::::<><><>0<>0<>539d25b254e6e5c6b490aebd4e632957<>res://.godot/imported/Sprite-0004-shadowwalk.png-5850ceb429f22bc4e5ff0ee5771f4aed.ctex::
+Sprite-0005-punch1.png::CompressedTexture2D::8240806892910883483::1785894247::1785894248::1::::<><><>0<>0<>4cd54712eb8537db1be848e62b3d45dc<>res://.godot/imported/Sprite-0005-punch1.png-752463a64bfbd8e482ed95ea4b868984.ctex::
+Sprite-0006-shadowpunch1.png::CompressedTexture2D::2001058781637833975::1785894247::1785894248::1::::<><><>0<>0<>15197a9bc8f2e6739f0be9d6cac19960<>res://.godot/imported/Sprite-0006-shadowpunch1.png-08bfe7499415caad0d355e0bb020c123.ctex::
+Sprite-0007-punch2.png::CompressedTexture2D::4727286246675232143::1785894247::1785894248::1::::<><><>0<>0<>b9edbdea31daacbfb2953cbc54740316<>res://.godot/imported/Sprite-0007-punch2.png-e5705286123e8825fdc1b13548a3612f.ctex::
+Sprite-0008-shadowpunch2.png::CompressedTexture2D::1343529762138727189::1785894247::1785894248::1::::<><><>0<>0<>a9c8c03b9a91f01f3a5499869d9271d0<>res://.godot/imported/Sprite-0008-shadowpunch2.png-c89511865bb0312adf1fac69a37e3fe6.ctex::
+Sprite-0009-punch3.png::CompressedTexture2D::2222547103171893222::1785894247::1785894248::1::::<><><>0<>0<>f6d3e5154353d417ed50640453322d4f<>res://.godot/imported/Sprite-0009-punch3.png-604bc35583f7586b13d844f7f050e77b.ctex::
+Sprite-0010-shadowpunch3.png::CompressedTexture2D::5639379999828556125::1785894247::1785894248::1::::<><><>0<>0<>11ff23d5ef66c5352093db24c4190874<>res://.godot/imported/Sprite-0010-shadowpunch3.png-991b5132c67a2b0b06bc30fe6f21a80f.ctex::
+Sprite-0011-punch4.png::CompressedTexture2D::6685976372049431200::1785894247::1785894248::1::::<><><>0<>0<>c23ab904e2388a324038cec00138d6a3<>res://.godot/imported/Sprite-0011-punch4.png-4bc6e4527b4019a3fde3ff6ae6537e94.ctex::
+Sprite-0012-shadowpunch4.png::CompressedTexture2D::3854480967530967587::1785894247::1785894248::1::::<><><>0<>0<>79f65eb93f6f193df001fd8ff7655bb9<>res://.godot/imported/Sprite-0012-shadowpunch4.png-cb31a09d39898ff92a6dd94d151f31ec.ctex::
+Sprite-0013-bodytobody.png::CompressedTexture2D::5293634370921280588::1785894247::1785894248::1::::<><><>0<>0<>c9eaa5beb8352adac89dd7bda92be2a3<>res://.godot/imported/Sprite-0013-bodytobody.png-092b4944836d985bc3760e51268d321e.ctex::
+Sprite-0014-shadowbodytobody1.png::CompressedTexture2D::3506996766090474933::1785894247::1785894248::1::::<><><>0<>0<>c59e32492cc87c4249ee3cfd0e723f6b<>res://.godot/imported/Sprite-0014-shadowbodytobody1.png-c3ad9b9130c49e13746a94e6b7a9673f.ctex::
+Sprite-0015-bodytobody2.png::CompressedTexture2D::8556386493341480594::1785894247::1785894248::1::::<><><>0<>0<>ddb6a2734067e492aee2f25986e67d64<>res://.godot/imported/Sprite-0015-bodytobody2.png-b18ee51b123adfb64391bc6d59f688a6.ctex::
+Sprite-0016-shadowbodytobody2.png::CompressedTexture2D::3739380222439048829::1785894247::1785894248::1::::<><><>0<>0<>479c3b64f17b43bb0d265791ba218ee5<>res://.godot/imported/Sprite-0016-shadowbodytobody2.png-b788610f1a54b9b1e1451e5e5c509784.ctex::
 ::res://main/::1785874145
 main.tscn::PackedScene::6796575766414288456::1785874126::0::1::::<><><>0<>0<><>::uid://bv3a02dhgw2km::::res://Scenes/floor.tscn<>uid://df3ch5dox8uei::::res://Scenes/Player.tscn
-::res://Scenes/::1785874145
+::res://Scenes/::1785893286
 animatable_body_2d.gd::GDScript::6082625585446013908::1785874126::0::1::::<>CharacterBody2D<><>0<>0<><>::
 floor.tscn::PackedScene::3918235045144906620::1785874126::0::1::::<><><>0<>0<><>::uid://dvk7wbrlhrd5s::::res://assets/Captura de pantalla 2026-07-30 084959.png
-Player.tscn::PackedScene::7568144361929075544::1785874126::0::1::::<><><>0<>0<><>::uid://isq5ettqy7y3::::res://Scripts/Player.gd<>uid://baui47nf7y24f::::res://assets/Scorpion/Stance/Sprite-0001.png<>uid://devds1vxv6u01::::res://assets/Scorpion/Stance/Sprite-0002.png<>uid://cmp4wuohwhhke::::res://assets/Scorpion/Stance/Sprite-0003.png<>uid://gct8ra3hynd::::res://assets/Scorpion/Stance/Sprite-0004.png<>uid://dsmky6ovkime7::::res://assets/Scorpion/Stance/Sprite-0005.png<>uid://cs2jngrsd5ma6::::res://assets/Scorpion/Stance/Sprite-0006.png<>uid://4bmj4g15x8rq::::res://assets/Scorpion/Stance/Sprite-0007.png
-::res://Scripts/::1785874145
-Player.gd::GDScript::599694834709065388::1785874126::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::7568144361929075544::1785893286::0::1::::<><><>0<>0<><>::uid://isq5ettqy7y3::::res://Scripts/Player.gd<>uid://baui47nf7y24f::::res://assets/Scorpion/Stance/Sprite-0001.png<>uid://devds1vxv6u01::::res://assets/Scorpion/Stance/Sprite-0002.png<>uid://cmp4wuohwhhke::::res://assets/Scorpion/Stance/Sprite-0003.png<>uid://gct8ra3hynd::::res://assets/Scorpion/Stance/Sprite-0004.png<>uid://dsmky6ovkime7::::res://assets/Scorpion/Stance/Sprite-0005.png<>uid://cs2jngrsd5ma6::::res://assets/Scorpion/Stance/Sprite-0006.png<>uid://4bmj4g15x8rq::::res://assets/Scorpion/Stance/Sprite-0007.png
+::res://Scripts/::1785892332
+Player.gd::GDScript::599694834709065388::1785892332::0::1::::<>CharacterBody2D<><>0<>0<><>::
