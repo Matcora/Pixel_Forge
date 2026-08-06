@@ -752,7 +752,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"bodytobody1",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -772,7 +772,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"bodytobody2",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -984,7 +984,7 @@ flip_h = true
 position = Vector2(20, 0)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lwh80")
-animation = &"punch4"
+animation = &"bodytobody2"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
