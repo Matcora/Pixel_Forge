@@ -67,21 +67,22 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
-size = Vector2(69.41718, 133.3735)
+size = Vector2(63.2, 136.95703)
 
 [node name="Node2D" type="Node2D" unique_id=1380512965]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
 script = ExtResource("1_kyqiw")
-min_x = 10
+min_x = 122
 max_x = 1102
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
 position = Vector2(20, 0)
+scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_jjauv")
 animation = &"stance"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
-position = Vector2(0.49999905, 6.499998)
-scale = Vector2(1.0516129, 1.0121951)
+position = Vector2(-31, 18.309189)
+scale = Vector2(2.5, 2.405)
 shape = SubResource("RectangleShape2D_uxa2c")

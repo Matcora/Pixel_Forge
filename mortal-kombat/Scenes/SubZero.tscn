@@ -959,14 +959,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
-size = Vector2(70.3681, 133.00603)
+size = Vector2(70.3681, 135.11009)
 
 [node name="Node2D" type="Node2D" unique_id=1380512965]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
 script = ExtResource("1_c2mjj")
-min_x = 10
-max_x = 1102
+min_x = 60
+max_x = 1020
 action_move_left = "p2_move_left"
 action_move_right = "p2_move_right"
 action_jump = "p2_jump"
@@ -975,17 +975,19 @@ action_crouch = "p2_crouch"
 
 [node name="Sombra" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=504524579]
 position = Vector2(20, 0)
+scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_jjauv")
 animation = &"punch4"
 flip_h = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
 position = Vector2(20, 0)
+scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lwh80")
 animation = &"punch4"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
-position = Vector2(9, 6)
-scale = Vector2(1.0516129, 1.0121951)
+position = Vector2(50, 15.530139)
+scale = Vector2(2.5, 2.405)
 shape = SubResource("RectangleShape2D_uxa2c")
