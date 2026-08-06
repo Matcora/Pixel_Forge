@@ -772,7 +772,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"bodytobody2",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -965,7 +965,8 @@ size = Vector2(70.3681, 135.11009)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
 script = ExtResource("1_c2mjj")
-min_x = 60
+jump_force = -900
+min_x = 68
 max_x = 1020
 action_move_left = "p2_move_left"
 action_move_right = "p2_move_right"

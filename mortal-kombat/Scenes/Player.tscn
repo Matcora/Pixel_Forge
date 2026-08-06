@@ -74,7 +74,7 @@ size = Vector2(63.2, 136.95703)
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
 script = ExtResource("1_kyqiw")
 min_x = 122
-max_x = 1102
+max_x = 1050
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
 position = Vector2(20, 0)
