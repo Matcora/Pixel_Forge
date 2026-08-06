@@ -12,5 +12,16 @@ position = Vector2(578, 634)
 [node name="Node2D2" parent="." unique_id=1380512965 instance=ExtResource("2_xwkvk")]
 position = Vector2(65, 546)
 
+[node name="CharacterBody2D" parent="Node2D2" index="0" unique_id=1414611595]
+gravity = 1200
+rival_path = NodePath("../../Node2D3")
+
 [node name="Node2D3" parent="." unique_id=1753840869 instance=ExtResource("3_xwkvk")]
 position = Vector2(1050, 546)
+
+[node name="CharacterBody2D" parent="Node2D3" index="0" unique_id=1414611595]
+gravity = 1200
+rival_path = NodePath("../../Node2D2")
+
+[editable path="Node2D2"]
+[editable path="Node2D3"]

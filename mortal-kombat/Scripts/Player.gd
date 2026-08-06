@@ -13,8 +13,11 @@ extends CharacterBody2D
 @export var action_attack = "action"
 @export var action_crouch = "crouch"
 
+@export var rival_path: NodePath
+
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sombra: AnimatedSprite2D = get_node_or_null("Sombra")
+@onready var rival: Node2D = get_node_or_null(rival_path)
 
 var golpeando: bool = false
 var punch_animations = ["punch1", "punch2", "punch3", "punch4"]
@@ -35,10 +38,11 @@ func _physics_process(delta):
 
 	global_position.x = clamp(global_position.x, min_x, max_x)
 
-	if direction != 0:
-		anim.flip_h = direction < 0
+	if rival:
+		var mirar_izquierda = rival.global_position.x < global_position.x
+		anim.flip_h = mirar_izquierda
 		if sombra:
-			sombra.flip_h = direction < 0
+			sombra.flip_h = mirar_izquierda
 
 	if Input.is_action_just_pressed(action_attack):
 		print("golpe")
