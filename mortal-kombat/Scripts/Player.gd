@@ -15,6 +15,11 @@ extends CharacterBody2D
 
 @export var rival_path: NodePath
 
+# Distancia minima permitida entre los centros de los dos personajes.
+# Si quedan mas cerca que esto (por ejemplo, al caer uno encima del
+# otro tras un salto), se separan automaticamente.
+@export var separacion_minima = 70.0
+
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sombra: AnimatedSprite2D = get_node_or_null("Sombra")
 @onready var rival: Node2D = get_node_or_null(rival_path)
@@ -37,6 +42,18 @@ func _physics_process(delta):
 	move_and_slide()
 
 	global_position.x = clamp(global_position.x, min_x, max_x)
+
+	# Evita que los dos personajes queden encimados o muy juntos
+	# (por ejemplo, al caer uno sobre el otro tras un salto)
+	if rival and is_on_floor() and rival.is_on_floor():
+		var distancia = abs(global_position.x - rival.global_position.x)
+		if distancia < separacion_minima:
+			var direccion_empuje = sign(global_position.x - rival.global_position.x)
+			if direccion_empuje == 0:
+				direccion_empuje = 1.0
+			var faltante = separacion_minima - distancia
+			global_position.x += direccion_empuje * faltante * 0.5
+			global_position.x = clamp(global_position.x, min_x, max_x)
 
 	if rival:
 		var mirar_izquierda = rival.global_position.x < global_position.x

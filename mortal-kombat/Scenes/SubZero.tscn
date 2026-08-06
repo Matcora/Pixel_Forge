@@ -959,13 +959,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
-size = Vector2(70.3681, 135.11009)
+size = Vector2(57.600002, 128.48233)
 
 [node name="Node2D" type="Node2D" unique_id=1380512965]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1414611595]
+collision_layer = 4
 script = ExtResource("1_c2mjj")
-jump_force = -900
+jump_force = -1000
 min_x = 100
 max_x = 1020
 action_move_left = "p2_move_left"
@@ -973,6 +974,7 @@ action_move_right = "p2_move_right"
 action_jump = "p2_jump"
 action_attack = "p2_action"
 action_crouch = "p2_crouch"
+separacion_minima = 90.0
 
 [node name="Sombra" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=504524579]
 position = Vector2(20, 0)
@@ -989,6 +991,6 @@ animation = &"bodytobody2"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
-position = Vector2(50, 15.530139)
+position = Vector2(52.000004, 15.499997)
 scale = Vector2(2.5, 2.405)
 shape = SubResource("RectangleShape2D_uxa2c")
