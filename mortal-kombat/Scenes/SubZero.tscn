@@ -856,7 +856,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"jump6",
-"speed": 20.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -2017,7 +2017,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"jump6",
-"speed": 20.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -2404,14 +2404,14 @@ separacion_minima = 90.0
 position = Vector2(20, 0)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_jjauv")
-animation = &"jump5"
+animation = &"jump6"
 flip_h = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=280174273]
 position = Vector2(20, 0)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lwh80")
-animation = &"jump5"
+animation = &"jump6"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]

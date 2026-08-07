@@ -18,12 +18,17 @@ extends CharacterBody2D
 @export var separacion_minima = 70.0
 @export var distancia_agarre = 100.0
 
+@export var vida_maxima = 100
+
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sombra: AnimatedSprite2D = get_node_or_null("Sombra")
 @onready var rival: Node2D = get_node_or_null(rival_path)
+@onready var hitbox: Area2D = get_node_or_null("Hitbox")
+
+var vida: float
+var hitbox_offset_x: float = 0.0
 
 var golpeando: bool = false
-var aterrizando: bool = false
 
 var punch_animations = ["punch1", "punch2", "punch3", "punch4"]
 var punch_index = 0
@@ -40,9 +45,13 @@ var air_roll_index = 0
 var mirar_izquierda: bool = false
 
 
-func _physics_process(delta):
-	var estaba_en_el_aire = not is_on_floor()
+func _ready():
+	vida = vida_maxima
+	if hitbox:
+		hitbox_offset_x = hitbox.position.x
 
+
+func _physics_process(delta):
 	var direction = Input.get_axis(action_move_left, action_move_right)
 	velocity.x = direction * speed
 	velocity.y += gravity * delta
@@ -70,6 +79,8 @@ func _physics_process(delta):
 		anim.flip_h = mirar_izquierda
 		if sombra:
 			sombra.flip_h = mirar_izquierda
+		if hitbox:
+			hitbox.position.x = -hitbox_offset_x if mirar_izquierda else hitbox_offset_x
 
 	var agachado = Input.is_action_pressed(action_crouch)
 	var en_aire = not is_on_floor()
@@ -77,10 +88,7 @@ func _physics_process(delta):
 	if rival:
 		distancia_rival = abs(global_position.x - rival.global_position.x)
 
-	# Detecta el instante exacto de aterrizar
-	var aterrizo_este_frame = estaba_en_el_aire and is_on_floor()
-
-	# Boton de golpe 
+	# Boton de golpe
 	if Input.is_action_just_pressed(action_attack):
 		var nombre_golpe = ""
 
@@ -98,10 +106,11 @@ func _physics_process(delta):
 
 		if anim.sprite_frames.has_animation(nombre_golpe):
 			golpeando = true
-			aterrizando = false
 			jugar_animacion(nombre_golpe)
+			if hitbox:
+				hitbox.activar_golpe()
 
-	#  Boton de patada 
+	# Boton de patada
 	elif Input.is_action_just_pressed(action_kick):
 		var nombre_patada = ""
 
@@ -118,23 +127,18 @@ func _physics_process(delta):
 
 		if anim.sprite_frames.has_animation(nombre_patada):
 			golpeando = true
-			aterrizando = false
 			jugar_animacion(nombre_patada)
+			if hitbox:
+				hitbox.activar_golpe()
 
-	# Estado pasivo (cuando no esta golpeando/pateando) 
+	# Estado pasivo (cuando no esta golpeando/pateando)
 	if golpeando:
 		if not anim.is_playing():
 			golpeando = false
 			if agachado:
 				mostrar_pose_agachada()
-	elif aterrizando:
-		if not anim.is_playing():
-			aterrizando = false
 	else:
-		if aterrizo_este_frame and anim.sprite_frames.has_animation("jump6"):
-			aterrizando = true
-			jugar_animacion("jump6")
-		elif en_aire:
+		if en_aire:
 			if direction != 0:
 				jugar_animacion(air_roll_animations[air_roll_index], false)
 			else:
@@ -167,3 +171,10 @@ func jugar_animacion(nombre: String, reiniciar: bool = true) -> void:
 	if sombra and sombra.sprite_frames.has_animation(nombre):
 		if reiniciar or sombra.animation != nombre:
 			sombra.play(nombre)
+
+
+func recibir_dano(cantidad) -> void:
+	vida = clamp(vida - cantidad, 0, vida_maxima)
+	print(name, " recibio ", cantidad, " de dano. Vida restante: ", vida)
+	if vida <= 0:
+		print(name, " fue derrotado")
