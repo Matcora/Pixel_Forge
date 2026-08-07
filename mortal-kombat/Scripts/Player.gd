@@ -80,7 +80,7 @@ func _physics_process(delta):
 	# Detecta el instante exacto de aterrizar
 	var aterrizo_este_frame = estaba_en_el_aire and is_on_floor()
 
-	# Boton de golpe
+	# Boton de golpe 
 	if Input.is_action_just_pressed(action_attack):
 		var nombre_golpe = ""
 
@@ -101,7 +101,7 @@ func _physics_process(delta):
 			aterrizando = false
 			jugar_animacion(nombre_golpe)
 
-	# Boton de patada 
+	#  Boton de patada 
 	elif Input.is_action_just_pressed(action_kick):
 		var nombre_patada = ""
 
@@ -125,6 +125,8 @@ func _physics_process(delta):
 	if golpeando:
 		if not anim.is_playing():
 			golpeando = false
+			if agachado:
+				mostrar_pose_agachada()
 	elif aterrizando:
 		if not anim.is_playing():
 			aterrizando = false
@@ -143,6 +145,19 @@ func _physics_process(delta):
 			jugar_animacion("walk", false)
 		else:
 			jugar_animacion("stance", false)
+
+
+func mostrar_pose_agachada() -> void:
+	# Salta directo al ultimo frame de down1 (posicion ya agachada),
+	# sin repetir la transicion de pararse a agacharse
+	if anim.sprite_frames.has_animation("down1"):
+		anim.animation = "down1"
+		anim.frame = anim.sprite_frames.get_frame_count("down1") - 1
+		anim.stop()
+	if sombra and sombra.sprite_frames.has_animation("down1"):
+		sombra.animation = "down1"
+		sombra.frame = sombra.sprite_frames.get_frame_count("down1") - 1
+		sombra.stop()
 
 
 func jugar_animacion(nombre: String, reiniciar: bool = true) -> void:
