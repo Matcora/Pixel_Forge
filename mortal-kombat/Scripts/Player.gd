@@ -34,7 +34,7 @@ var bodytobody_index = 0
 
 var air_punch_animations = ["jump2", "jump8"]
 var air_punch_index = 0
-var air_roll_animations = ["jump5", "jump7"]
+var air_roll_animations = ["jump7"]
 var air_roll_index = 0
 
 var mirar_izquierda: bool = false
@@ -101,7 +101,7 @@ func _physics_process(delta):
 			aterrizando = false
 			jugar_animacion(nombre_golpe)
 
-	# Boton de patada
+	# Boton de patada 
 	elif Input.is_action_just_pressed(action_kick):
 		var nombre_patada = ""
 
@@ -121,7 +121,7 @@ func _physics_process(delta):
 			aterrizando = false
 			jugar_animacion(nombre_patada)
 
-	# Estado pasivo (cuando no esta golpeando/pateando)
+	# Estado pasivo (cuando no esta golpeando/pateando) 
 	if golpeando:
 		if not anim.is_playing():
 			golpeando = false
