@@ -49,6 +49,8 @@
 [ext_resource type="Texture2D" uid="uid://bv2ta5j4eqcoa" path="res://assets/SubZero/Sprite-0019-kick2.png" id="41_qf2fe"]
 [ext_resource type="Texture2D" uid="uid://mwuy5d2vuwx6" path="res://assets/SubZero/Sprite-0021-kick3.png" id="42_ujiag"]
 [ext_resource type="Texture2D" uid="uid://bwkf5cqc7y716" path="res://assets/SubZero/Sprite-0023-kick4.png" id="43_08yoh"]
+[ext_resource type="Script" uid="uid://c2o4q7i6h4qk3" path="res://Scripts/hitbox.gd" id="50_mh1p3"]
+[ext_resource type="Script" uid="uid://bm4hbkltyubxj" path="res://Scripts/hurtbox.gd" id="51_swkrn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t6gjk"]
 atlas = ExtResource("2_edv5b")
@@ -2383,7 +2385,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
-size = Vector2(57.600002, 128.48233)
+size = Vector2(61.6, 144.07486)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bm02b"]
+size = Vector2(178.375, 309.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7yjhc"]
+size = Vector2(149, 343)
 
 [node name="Node2D" type="Node2D" unique_id=1380512965]
 
@@ -2415,6 +2423,23 @@ animation = &"jump6"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
-position = Vector2(52.000004, 15.499997)
+position = Vector2(29.999998, -3.25)
 scale = Vector2(2.5, 2.405)
 shape = SubResource("RectangleShape2D_uxa2c")
+
+[node name="Hitbox" type="Area2D" parent="CharacterBody2D" unique_id=2015594866 groups=["hitbox"]]
+position = Vector2(-39, -64)
+script = ExtResource("50_mh1p3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Hitbox" unique_id=1479888219 groups=["hitbox"]]
+position = Vector2(-185.8125, 48)
+shape = SubResource("RectangleShape2D_bm02b")
+
+[node name="Hurtbox" type="Area2D" parent="CharacterBody2D" unique_id=1478675251 groups=["hurtbox"]]
+script = ExtResource("51_swkrn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Hurtbox" unique_id=1483978839]
+position = Vector2(29.5, -3.5)
+shape = SubResource("RectangleShape2D_7yjhc")
+
+[connection signal="area_entered" from="CharacterBody2D/Hurtbox" to="CharacterBody2D/Hurtbox" method="_on_area_entered"]

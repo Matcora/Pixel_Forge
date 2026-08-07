@@ -175,6 +175,6 @@ func jugar_animacion(nombre: String, reiniciar: bool = true) -> void:
 
 func recibir_dano(cantidad) -> void:
 	vida = clamp(vida - cantidad, 0, vida_maxima)
-	print(name, " recibio ", cantidad, " de dano. Vida restante: ", vida)
+	print(name, " recibio ", cantidad, " de daño. Vida restante: ", vida)
 	if vida <= 0:
 		print(name, " fue derrotado")

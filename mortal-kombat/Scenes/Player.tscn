@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dsmky6ovkime7" path="res://assets/Scorpion/Stance/Sprite-0005.png" id="6_ksbbd"]
 [ext_resource type="Texture2D" uid="uid://cs2jngrsd5ma6" path="res://assets/Scorpion/Stance/Sprite-0006.png" id="7_glx4g"]
 [ext_resource type="Texture2D" uid="uid://4bmj4g15x8rq" path="res://assets/Scorpion/Stance/Sprite-0007.png" id="8_miouo"]
+[ext_resource type="Script" uid="uid://c2o4q7i6h4qk3" path="res://Scripts/hitbox.gd" id="9_megsn"]
+[ext_resource type="Script" uid="uid://bm4hbkltyubxj" path="res://Scripts/hurtbox.gd" id="9_yoq75"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o3h8g"]
 atlas = ExtResource("2_kyqiw")
@@ -67,7 +69,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
-size = Vector2(54.4, 129.31393)
+size = Vector2(74.399994, 138.87735)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7yjhc"]
+size = Vector2(224, 328.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bm02b"]
+size = Vector2(82, 307)
 
 [node name="Node2D" type="Node2D" unique_id=1380512965]
 
@@ -85,6 +93,23 @@ sprite_frames = SubResource("SpriteFrames_jjauv")
 animation = &"stance"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
-position = Vector2(-19.999998, 19.499992)
+position = Vector2(-26.999996, 19.999994)
 scale = Vector2(2.5, 2.405)
 shape = SubResource("RectangleShape2D_uxa2c")
+
+[node name="Hurtbox" type="Area2D" parent="CharacterBody2D" unique_id=2132201725 groups=["hurbox"]]
+script = ExtResource("9_yoq75")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Hurtbox" unique_id=1210456404]
+position = Vector2(-27, 19.75)
+shape = SubResource("RectangleShape2D_7yjhc")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1406106169 groups=["hitbox"]]
+position = Vector2(100, -20)
+script = ExtResource("9_megsn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=408233294]
+position = Vector2(84, 25)
+shape = SubResource("RectangleShape2D_bm02b")
+
+[connection signal="area_entered" from="CharacterBody2D/Hurtbox" to="CharacterBody2D/Hurtbox" method="_on_area_entered"]
