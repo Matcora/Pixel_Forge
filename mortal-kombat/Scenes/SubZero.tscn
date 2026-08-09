@@ -2419,7 +2419,7 @@ flip_h = true
 position = Vector2(20, 0)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lwh80")
-animation = &"walk"
+animation = &"kick1"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]

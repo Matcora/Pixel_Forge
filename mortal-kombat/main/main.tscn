@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c33ku0a0sbjki"]
 
 [ext_resource type="PackedScene" uid="uid://bv3a02dhgw2km" path="res://Scenes/floor.tscn" id="1_pjrb6"]
-[ext_resource type="PackedScene" uid="uid://df3ch5dox8uei" path="res://Scenes/Player.tscn" id="2_xwkvk"]
+[ext_resource type="PackedScene" uid="uid://df3ch5dox8uei" path="res://Scenes/Scorpion.tscn" id="2_xwkvk"]
 [ext_resource type="PackedScene" uid="uid://c0235dn6yachw" path="res://Scenes/SubZero.tscn" id="3_xwkvk"]
 
 [node name="main" type="Node2D" unique_id=506323842]
@@ -16,12 +16,17 @@ position = Vector2(65, 546)
 gravity = 1200
 rival_path = NodePath("../../Node2D3/CharacterBody2D")
 
+[node name="CollisionShape2D" parent="Node2D2/Hitbox" parent_id_path=PackedInt32Array(1380512965, 1406106169) index="0" unique_id=408233294 groups=["hitbox"]]
+
 [node name="Node2D3" parent="." unique_id=1753840869 instance=ExtResource("3_xwkvk")]
 position = Vector2(1050, 546)
 
 [node name="CharacterBody2D" parent="Node2D3" index="0" unique_id=1414611595]
 gravity = 1200
 rival_path = NodePath("../../Node2D2/CharacterBody2D")
+
+[node name="AnimatedSprite2D" parent="Node2D3/CharacterBody2D" index="1" unique_id=280174273]
+animation = &"bodytobody2"
 
 [editable path="Node2D2"]
 [editable path="Node2D3"]
