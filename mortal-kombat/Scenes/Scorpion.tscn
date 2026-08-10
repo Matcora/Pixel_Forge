@@ -1,59 +1,53 @@
 [gd_scene format=3 uid="uid://df3ch5dox8uei"]
 
 [ext_resource type="Script" uid="uid://isq5ettqy7y3" path="res://Scripts/Player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://dryxqu8856dai" path="res://Pixel_Forge-main/Sprites Scorpion/Body to body/Body to body.png" id="2_6scw8"]
+[ext_resource type="Texture2D" uid="uid://di4be27g12mox" path="res://assets/Scorpion/Body to body.png" id="2_6scw8"]
 [ext_resource type="Texture2D" uid="uid://bp72yvmg3noen" path="res://assets/SubZero/Sprite-0014-shadowbodytobody1.png" id="2_i3dew"]
-[ext_resource type="Texture2D" uid="uid://baui47nf7y24f" path="res://assets/Scorpion/Stance/Sprite-0001.png" id="2_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://devds1vxv6u01" path="res://assets/Scorpion/Stance/Sprite-0002.png" id="3_bhhdu"]
+[ext_resource type="Texture2D" uid="uid://mnvoidd2xxba" path="res://assets/Scorpion/Stance.png" id="2_kyqiw"]
 [ext_resource type="Texture2D" uid="uid://btjnbtdmkg5sr" path="res://assets/SubZero/Sprite-0016-shadowbodytobody2.png" id="3_mdmqu"]
-[ext_resource type="Texture2D" uid="uid://dpyahtv5eih0a" path="res://Pixel_Forge-main/Sprites Scorpion/Body to body/Body to body2.png" id="3_prnyp"]
+[ext_resource type="Texture2D" uid="uid://bbgrofwcbrje3" path="res://assets/Scorpion/Body to body2.png" id="3_prnyp"]
 [ext_resource type="Texture2D" uid="uid://cf86tvs326x4s" path="res://assets/SubZero/Sprite-0026-shadowdown1.png" id="4_a3jty"]
-[ext_resource type="Texture2D" uid="uid://cmp4wuohwhhke" path="res://assets/Scorpion/Stance/Sprite-0003.png" id="4_megsn"]
-[ext_resource type="Texture2D" uid="uid://cjskc07mpcj3e" path="res://Pixel_Forge-main/Sprites Scorpion/Down/Down1.png" id="4_oo4q0"]
-[ext_resource type="Texture2D" uid="uid://d4ny654f2ttw5" path="res://Pixel_Forge-main/Sprites Scorpion/Down/Down2.png" id="5_5cdul"]
+[ext_resource type="Texture2D" uid="uid://cfk5at824xoly" path="res://assets/Scorpion/Down1.png" id="4_oo4q0"]
+[ext_resource type="Texture2D" uid="uid://t6kgndlorje8" path="res://assets/Scorpion/Down2.png" id="5_5cdul"]
 [ext_resource type="Texture2D" uid="uid://rm7pfieldarw" path="res://assets/SubZero/Sprite-0028-shadowdown2.png" id="5_32lq4"]
-[ext_resource type="Texture2D" uid="uid://gct8ra3hynd" path="res://assets/Scorpion/Stance/Sprite-0004.png" id="5_yoq75"]
-[ext_resource type="Texture2D" uid="uid://c2o1tb0bkmil5" path="res://Pixel_Forge-main/Sprites Scorpion/Down/Down3.png" id="6_30orm"]
+[ext_resource type="Texture2D" uid="uid://d021b1f2mjov8" path="res://assets/Scorpion/Down3.png" id="6_30orm"]
 [ext_resource type="Texture2D" uid="uid://bxflobpenvg1s" path="res://assets/SubZero/Sprite-0030-shadowdown3.png" id="6_cvr6y"]
-[ext_resource type="Texture2D" uid="uid://dsmky6ovkime7" path="res://assets/Scorpion/Stance/Sprite-0005.png" id="6_ksbbd"]
 [ext_resource type="Texture2D" uid="uid://bjfjvfs6embxs" path="res://assets/SubZero/Sprite-0032-shadowjump1.png" id="7_4i7rl"]
-[ext_resource type="Texture2D" uid="uid://cs2jngrsd5ma6" path="res://assets/Scorpion/Stance/Sprite-0006.png" id="7_glx4g"]
-[ext_resource type="Texture2D" uid="uid://ckqsxg5mgcmvn" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump1.png" id="7_w0i3v"]
+[ext_resource type="Texture2D" uid="uid://7astl5dhwm83" path="res://assets/Scorpion/Jump1.png" id="7_w0i3v"]
 [ext_resource type="Texture2D" uid="uid://datfrqlrjlnqm" path="res://assets/SubZero/Sprite-0034-shadowjump2.png" id="8_1lad0"]
-[ext_resource type="Texture2D" uid="uid://cp4ofcyn42c64" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump2.png" id="8_jsoyg"]
-[ext_resource type="Texture2D" uid="uid://4bmj4g15x8rq" path="res://assets/Scorpion/Stance/Sprite-0007.png" id="8_miouo"]
-[ext_resource type="Texture2D" uid="uid://c513aiyx6fq4f" path="res://Pixel_Forge-main/Sprites Scorpion/Walk/Walk.png" id="9_0jvp4"]
-[ext_resource type="Texture2D" uid="uid://54ep0aeaf74" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump3.png" id="9_idxcr"]
+[ext_resource type="Texture2D" uid="uid://cilyh6rn6gpt2" path="res://assets/Scorpion/Jump2.png" id="8_jsoyg"]
+[ext_resource type="Texture2D" uid="uid://bluqgwmv3wlei" path="res://assets/Scorpion/Walk.png" id="9_0jvp4"]
+[ext_resource type="Texture2D" uid="uid://cje6apdwskswp" path="res://assets/Scorpion/Jump3.png" id="9_idxcr"]
 [ext_resource type="Script" uid="uid://c2o4q7i6h4qk3" path="res://Scripts/hitbox.gd" id="9_megsn"]
 [ext_resource type="Texture2D" uid="uid://sbme5p2oq76u" path="res://assets/SubZero/Sprite-0036-shadowjump3.png" id="9_xl652"]
 [ext_resource type="Script" uid="uid://bm4hbkltyubxj" path="res://Scripts/hurtbox.gd" id="9_yoq75"]
-[ext_resource type="Texture2D" uid="uid://c3wiceh43x27a" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump4.png" id="10_30orm"]
+[ext_resource type="Texture2D" uid="uid://bes88s5a5vkvi" path="res://assets/Scorpion/Jump4.png" id="10_30orm"]
 [ext_resource type="Texture2D" uid="uid://bi2yk8lpwlulq" path="res://assets/SubZero/Sprite-0038-shadowjump4.png" id="10_k20ry"]
 [ext_resource type="Texture2D" uid="uid://cwofhb4w5jmm2" path="res://assets/SubZero/Sprite-0040-shadowjump5.png" id="11_djl2g"]
-[ext_resource type="Texture2D" uid="uid://d06iw7bl8fjcw" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump5.png" id="11_w0i3v"]
-[ext_resource type="Texture2D" uid="uid://bcu6r5335tgwc" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump6.png" id="12_0gfjm"]
+[ext_resource type="Texture2D" uid="uid://c8ouda0nocl47" path="res://assets/Scorpion/Jump5.png" id="11_w0i3v"]
+[ext_resource type="Texture2D" uid="uid://bo2qj6je8vfhw" path="res://assets/Scorpion/Jump6.png" id="12_0gfjm"]
 [ext_resource type="Texture2D" uid="uid://choh8rj5xuxgs" path="res://assets/SubZero/Sprite-0042-shadowjump6.png" id="12_vsm8g"]
-[ext_resource type="Texture2D" uid="uid://d0cf65r6hv8mp" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump7.png" id="13_bfjih"]
+[ext_resource type="Texture2D" uid="uid://dvrd6hdnxia3l" path="res://assets/Scorpion/Jump7.png" id="13_bfjih"]
 [ext_resource type="Texture2D" uid="uid://d0bb5sca7d3uy" path="res://assets/SubZero/Sprite-0044-shadowjump7.png" id="13_sd05t"]
 [ext_resource type="Texture2D" uid="uid://ciikmhywf7rer" path="res://assets/SubZero/Sprite-0046-shadowjump8.png" id="14_07bbj"]
-[ext_resource type="Texture2D" uid="uid://bfj86uuqh3r4n" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump8.png" id="14_xar0u"]
+[ext_resource type="Texture2D" uid="uid://svt4jrclxjvh" path="res://assets/Scorpion/Jump8.png" id="14_xar0u"]
 [ext_resource type="Texture2D" uid="uid://c0qgoffs65ar1" path="res://assets/SubZero/Sprite-0048-shadowjump9.png" id="15_apuvn"]
-[ext_resource type="Texture2D" uid="uid://ligotiyyqco7" path="res://Pixel_Forge-main/Sprites Scorpion/Jump/Jump9.png" id="15_bfjih"]
-[ext_resource type="Texture2D" uid="uid://b333f3gm6i0u6" path="res://Pixel_Forge-main/Sprites Scorpion/Kick/Kick1.png" id="16_lske7"]
+[ext_resource type="Texture2D" uid="uid://cqqs8dmvsqmub" path="res://assets/Scorpion/Jump9.png" id="15_bfjih"]
+[ext_resource type="Texture2D" uid="uid://1e2sadhnjsco" path="res://assets/Scorpion/Kick1.png" id="16_lske7"]
 [ext_resource type="Texture2D" uid="uid://ds716ay8kf5ix" path="res://assets/SubZero/Sprite-0018-shadowkick1.png" id="16_oygbs"]
 [ext_resource type="Texture2D" uid="uid://klub6iok426b" path="res://assets/SubZero/Sprite-0020-shadowkick2.png" id="17_872u1"]
-[ext_resource type="Texture2D" uid="uid://dgkg6uoxxv8kf" path="res://Pixel_Forge-main/Sprites Scorpion/Kick/Kick2.png" id="17_r6r3v"]
-[ext_resource type="Texture2D" uid="uid://bj32rwcx6nldf" path="res://Pixel_Forge-main/Sprites Scorpion/Kick/Kick3.png" id="18_2wj55"]
+[ext_resource type="Texture2D" uid="uid://c3285l7upsbbq" path="res://assets/Scorpion/Kick2.png" id="17_r6r3v"]
+[ext_resource type="Texture2D" uid="uid://califvf8jus0t" path="res://assets/Scorpion/Kick3.png" id="18_2wj55"]
 [ext_resource type="Texture2D" uid="uid://cwh5l2clrspvc" path="res://assets/SubZero/Sprite-0022-shadowkick3.png" id="18_bvrxv"]
 [ext_resource type="Texture2D" uid="uid://w5qmg5ju02vk" path="res://assets/SubZero/Sprite-0024-shadowkick4.png" id="19_0ffo7"]
-[ext_resource type="Texture2D" uid="uid://dcjsiylg15qu7" path="res://Pixel_Forge-main/Sprites Scorpion/Kick/Kick4.png" id="19_ps5ex"]
-[ext_resource type="Texture2D" uid="uid://cpb54d2sib25" path="res://Pixel_Forge-main/Sprites Scorpion/Punch/Punch1.png" id="20_8yq0e"]
+[ext_resource type="Texture2D" uid="uid://ckrdiooc7iu2t" path="res://assets/Scorpion/Kick4.png" id="19_ps5ex"]
+[ext_resource type="Texture2D" uid="uid://dk5oapah6gl1a" path="res://assets/Scorpion/Punch1.png" id="20_8yq0e"]
 [ext_resource type="Texture2D" uid="uid://3rle7rsxkmlr" path="res://assets/SubZero/Sprite-0006-shadowpunch1.png" id="20_u7swy"]
 [ext_resource type="Texture2D" uid="uid://te20eflwya0d" path="res://assets/SubZero/Sprite-0008-shadowpunch2.png" id="21_0pjdn"]
-[ext_resource type="Texture2D" uid="uid://bsmorffkr0u2i" path="res://Pixel_Forge-main/Sprites Scorpion/Punch/Punch2.png" id="21_qucp6"]
+[ext_resource type="Texture2D" uid="uid://c21364nqvkidd" path="res://assets/Scorpion/Punch2.png" id="21_qucp6"]
 [ext_resource type="Texture2D" uid="uid://cml0087ywjvgv" path="res://assets/SubZero/Sprite-0010-shadowpunch3.png" id="22_jneyj"]
-[ext_resource type="Texture2D" uid="uid://b4mjoi84rftwk" path="res://Pixel_Forge-main/Sprites Scorpion/Punch/Punch3.png" id="22_tgw1w"]
-[ext_resource type="Texture2D" uid="uid://b3f4xuu1g8sna" path="res://Pixel_Forge-main/Sprites Scorpion/Punch/Punch4.png" id="23_8y1un"]
+[ext_resource type="Texture2D" uid="uid://dnmelytmbn8jg" path="res://assets/Scorpion/Punch3.png" id="22_tgw1w"]
+[ext_resource type="Texture2D" uid="uid://dq28qydduiylr" path="res://assets/Scorpion/Punch4.png" id="23_8y1un"]
 [ext_resource type="Texture2D" uid="uid://bu6e0dtvfnf1d" path="res://assets/SubZero/Sprite-0012-shadowpunch4.png" id="23_f822p"]
 [ext_resource type="Texture2D" uid="uid://dye6m8c1g1s4h" path="res://assets/SubZero/Sprite-0002-shadowstance.png" id="24_g14r8"]
 [ext_resource type="Texture2D" uid="uid://i14bevtmkfw2" path="res://assets/SubZero/Sprite-0004-shadowwalk.png" id="25_f60wl"]
@@ -1759,33 +1753,33 @@ region = Rect2(1872, 0, 234, 220)
 atlas = ExtResource("23_8y1un")
 region = Rect2(2106, 0, 234, 220)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o3h8g"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_6jegi"]
 atlas = ExtResource("2_kyqiw")
-region = Rect2(0, 0, 230, 220)
+region = Rect2(0, 0, 233, 229)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1e7my"]
-atlas = ExtResource("3_bhhdu")
-region = Rect2(0, 0, 230, 220)
+[sub_resource type="AtlasTexture" id="AtlasTexture_378ln"]
+atlas = ExtResource("2_kyqiw")
+region = Rect2(233, 0, 233, 229)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_arntx"]
-atlas = ExtResource("4_megsn")
-region = Rect2(0, 0, 230, 220)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfpit"]
+atlas = ExtResource("2_kyqiw")
+region = Rect2(466, 0, 233, 229)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lslt6"]
-atlas = ExtResource("5_yoq75")
-region = Rect2(0, 0, 230, 220)
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6lcy"]
+atlas = ExtResource("2_kyqiw")
+region = Rect2(699, 0, 233, 229)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ulo2v"]
-atlas = ExtResource("6_ksbbd")
-region = Rect2(0, 0, 230, 220)
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1ec5"]
+atlas = ExtResource("2_kyqiw")
+region = Rect2(932, 0, 233, 229)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1iu4k"]
-atlas = ExtResource("7_glx4g")
-region = Rect2(0, 0, 230, 220)
+[sub_resource type="AtlasTexture" id="AtlasTexture_lu6jg"]
+atlas = ExtResource("2_kyqiw")
+region = Rect2(1165, 0, 233, 229)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m0x7a"]
-atlas = ExtResource("8_miouo")
-region = Rect2(0, 0, 230, 220)
+[sub_resource type="AtlasTexture" id="AtlasTexture_er8ld"]
+atlas = ExtResource("2_kyqiw")
+region = Rect2(1398, 0, 233, 229)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6scw8"]
 atlas = ExtResource("9_0jvp4")
@@ -2312,29 +2306,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o3h8g")
+"texture": SubResource("AtlasTexture_6jegi")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1e7my")
+"texture": SubResource("AtlasTexture_378ln")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_arntx")
+"texture": SubResource("AtlasTexture_vfpit")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lslt6")
+"texture": SubResource("AtlasTexture_b6lcy")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ulo2v")
+"texture": SubResource("AtlasTexture_i1ec5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1iu4k")
+"texture": SubResource("AtlasTexture_lu6jg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m0x7a")
+"texture": SubResource("AtlasTexture_er8ld")
 }],
 "loop": 1,
 "name": &"stance",
-"speed": 12.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -2400,7 +2394,7 @@ flip_h = true
 position = Vector2(20, 0)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_u7swy")
-animation = &"punch4"
+animation = &"stance"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1904346648]
 position = Vector2(-26, 18.000002)

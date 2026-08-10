@@ -16,8 +16,6 @@ position = Vector2(65, 546)
 gravity = 1200
 rival_path = NodePath("../../Node2D3/CharacterBody2D")
 
-[node name="CollisionShape2D" parent="Node2D2/Hitbox" parent_id_path=PackedInt32Array(1380512965, 1406106169) index="0" unique_id=408233294 groups=["hitbox"]]
-
 [node name="Node2D3" parent="." unique_id=1753840869 instance=ExtResource("3_xwkvk")]
 position = Vector2(1050, 546)
 

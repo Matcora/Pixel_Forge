@@ -148,7 +148,7 @@ func _physics_process(delta):
 		elif direction != 0:
 			jugar_animacion("walk", false)
 		else:
-			jugar_animacion("stance", false)
+			jugar_animacion("stance", true)
 
 
 func mostrar_pose_agachada() -> void:
