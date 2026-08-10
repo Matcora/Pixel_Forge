@@ -20,6 +20,8 @@ extends CharacterBody2D
 
 @export var vida_maxima = 100
 
+@export var barra_vida: Range
+
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sombra: AnimatedSprite2D = get_node_or_null("Sombra")
 @onready var rival: Node2D = get_node_or_null(rival_path)
@@ -47,6 +49,9 @@ var mirar_izquierda: bool = false
 
 func _ready():
 	vida = vida_maxima
+	if barra_vida:
+		barra_vida.max_value = vida_maxima
+		barra_vida.value = vida
 	if hitbox:
 		hitbox_offset_x = hitbox.position.x
 
@@ -175,6 +180,8 @@ func jugar_animacion(nombre: String, reiniciar: bool = true) -> void:
 
 func recibir_dano(cantidad) -> void:
 	vida = clamp(vida - cantidad, 0, vida_maxima)
+	if barra_vida:
+		barra_vida.value = vida
 	print(name, " recibio ", cantidad, " de daño. Vida restante: ", vida)
 	if vida <= 0:
 		print(name, " fue derrotado")
